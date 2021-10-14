@@ -15,12 +15,10 @@ Il y a deux objectifs dans ce challenge :
 
 Pour cela, vous disposerez de deux jeux de données distincts. Le premier, appelé `blaesheim.geojson` correspond  à un jeu de 39 traces acquises sur la commune de Blaesheim avec une montre GPS très précise. Ce jeu de données est très propre et va permettre à servir de benchmarkl à votre méthode. 
 La vérité terrain (listes des intersections à trouver et des segments) est contenue dans le fichier `blaesheim_gt.geojson`.
-Le second jeu de données, `blaesheim_visorando.geojson` correspond à des traces extraites de la base de données de l'application Visorando. Les données sont nettement moins propres... :-(
+Enfin le fichier `blaesheim_result_example.geojson` représente un exemple de fichier résultat à générer pour utiliser la fonction d'évaluation ().
+Le second jeu de données, `blaesheim_visorando.geojson` correspond à des traces extraites de la base de données de l'application Visorando. Les données sont nettement moins propres :-(
+Vous pourrez l'utiliser une fois que vous aurez quelque chose de fonctionnel pour vous rendre compte que le problème est difficile !
 
-## Exemple
-
-
-dans le répertoire data :
-- `blaesheim.geojson` : ensemble des traces brutes à fusionner
-- `blaesheim_gt.geojson` : vérité terrain contenant les croisements et les segments réels à trouver
-- `blaesheim_result_example.geojson` : exemple de fichier résultat à générer pour utiliser la fonction d'évaluation
+## Manipulation des fichiers .geojson
+Pour visualiser le contenu des fichiers `.geojson` vous pouvez utiliser le site [geojson.io](geojson.io). Il suffit de faire un glisser-déposer des fichiers sur la carte pour les visualiser.
+Pour manipuler les fichier en python, vous pouvez utiliser la librairie [geojson](https://pypi.org/project/geojson/)
