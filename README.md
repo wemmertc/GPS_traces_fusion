@@ -28,7 +28,7 @@ Pour visualiser le contenu des fichiers `.geojson` vous pouvez utiliser le site 
 Pour manipuler les fichier en python, vous pouvez utiliser la librairie [geojson](https://pypi.org/project/geojson/).
 
 ## Evaluation de votre résultat
-Le résultat est un fichier `.geojson`contenant les points correspondant à des intersections
+Le résultat est un fichier `.geojson`contenant les points correspondant à des intersections sous forme de `Point`:
 
 >`{
 >      "type": "Feature",
@@ -39,3 +39,25 @@ Le résultat est un fichier `.geojson`contenant les points correspondant à des 
 >          48.508635
 >        ]
 >}`
+
+et des segments sous forme de `LineString`:
+
+>`{
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.579784,
+            48.495809
+          ],
+          [
+            7.578646,
+            48.497306
+          ],
+          [
+            7.577811,
+            48.498106
+          ]
+        ]
+      }`
