@@ -9,8 +9,16 @@ C'est ce challenge que nous vous demandons de relever aujourd'hui !
 
 
 ## Objectifs
-1. trouver l'ensemble des points d'intersection à partir des traces brutes
-2. générer les segments reliant ces points d'intersection
+Il y a deux objectifs dans ce challenge :
+1. trouver l'ensemble des points d'intersection à partir de traces GPS brutes ;
+2. générer les segments reliant ces points d'intersection.
+
+Pour cela, vous disposerez de deux jeux de données distincts. Le premier, appelé `blaesheim.geojson` correspond  à un jeu de 39 traces acquises sur la commune de Blaesheim avec une montre GPS très précise. Ce jeu de données est très propre et va permettre à servir de benchmarkl à votre méthode. 
+La vérité terrain (listes des intersections à trouver et des segments) est contenue dans le fichier `blaesheim_gt.geojson`.
+Le second jeu de données, `blaesheim_visorando.geojson` correspond à des traces extraites de la base de données de l'application Visorando. Les données sont nettement moins propres... :-(
+
+## Exemple
+
 
 dans le répertoire data :
 - `blaesheim.geojson` : ensemble des traces brutes à fusionner
