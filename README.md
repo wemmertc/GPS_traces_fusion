@@ -21,7 +21,7 @@ Le second jeu de données, `blaesheim_visorando.geojson` correspond à des trace
 Vous pourrez l'utiliser une fois que vous aurez quelque chose de fonctionnel pour vous rendre compte que le problème est difficile !
 
 ## Manipulation des fichiers .geojson
-Les spécification du format sont disponibles [ici](https://geojson.org/).
+Les spécifications du format sont disponibles [ici](https://geojson.org/).
 
 Pour visualiser le contenu des fichiers `.geojson` vous pouvez utiliser le site [geojson.io](geojson.io). Il suffit de faire un glisser-déposer des fichiers sur la carte pour les visualiser.
 
@@ -61,3 +61,14 @@ et des segments sous forme de `LineString`:
           ]
         ]
       }`
+
+Le fichier `blaesheim_result_example.geojson`est un exemple de fichier résultat complet.
+
+Pour évaluer votre résultat, vous pouvez utiliser le script python `evaluator.py`.
+
+Utilisation : 
+> python3 evaluator.py -f <result_file.geojson> -t <groundtruth.geojson>  -m <intersection precision>
+
+- `-f <result_file.geojson>` correspond à votre résultat à évaluer
+- `-t <groundtruth.geojson>` correspond à la vérité terrain à laquelle se comparer, ici `data/blaesheim_gt.geojson`
+- `-m <intersection precision>` correspond à la précision en mètres de détection des intersections (50m par défaut)
