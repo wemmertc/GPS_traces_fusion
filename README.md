@@ -16,7 +16,7 @@ Il y a deux objectifs dans ce challenge :
 
 Pour cela, vous disposerez de deux jeux de données distincts. Le premier, appelé `blaesheim.geojson` correspond  à un jeu de 39 traces acquises sur la commune de Blaesheim avec une montre GPS très précise. Ce jeu de données est très propre et va permettre à servir de benchmark à votre méthode. 
 
-![test](/img/gps_brut.png)
+<img src="/img/gps_brut.png" width="300px"/>
 
 La vérité terrain (listes des intersections à trouver et des segments) est contenue dans le fichier `blaesheim_gt.geojson`.
 Enfin le fichier `blaesheim_result_example.geojson` représente un exemple de fichier résultat à générer pour utiliser la fonction d'évaluation (voir plus bas).
